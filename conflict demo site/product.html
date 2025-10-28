@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Conflict-X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">CONFLICT-X</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="catalog.html">CATALOG</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-layout">
+                <div class="product-images">
+                    <img src="images/product1.jpg" alt="Product Main" class="main-image">
+                    <div class="thumbnail-gallery">
+                        <img src="images/product1.jpg" alt="Thumb 1" class="thumbnail active">
+                        <img src="images/product1.jpg" alt="Thumb 2" class="thumbnail">
+                        <img src="images/product1.jpg" alt="Thumb 3" class="thumbnail">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>T-SHIRT CONFLICT BLACK</h1>
+                    <p class="product-code">SKU: CONFLX-TS-001</p>
+                    <div class="product-description">
+                        <h3>DESCRIPTION</h3>
+                        <p>Premium cotton t-shirt with Conflict-X signature graphic. Comfortable fit with high-quality screen printing. Perfect for everyday streetwear style.</p>
+                    </div>
+                    <div class="product-specs">
+                        <h3>SPECIFICATIONS</h3>
+                        <ul>
+                            <li><strong>Material:</strong> 100% Cotton Combed 24s</li>
+                            <li><strong>Weight:</strong> 220 GSM</li>
+                            <li><strong>Print:</strong> Premium Screen Printing</li>
+                            <li><strong>Fit:</strong> Regular Fit</li>
+                        </ul>
+                    </div>
+                    <div class="product-sizes">
+                        <h3>SIZE AVAILABLE</h3>
+                        <div class="size-chart">
+                            <span class="size-box">S</span>
+                            <span class="size-box">M</span>
+                            <span class="size-box">L</span>
+                            <span class="size-box">XL</span>
+                            <span class="size-box">XXL</span>
+                        </div>
+                    </div>
+                    <div class="product-cta">
+                        <a href="https://instagram.com/conflictx" target="_blank" class="btn btn-primary">INQUIRE VIA INSTAGRAM</a>
+                        <a href="https://wa.me/628xxxxx?text=Hi%20saya%20tertarik%20dengan%20produk%20T-SHIRT%20CONFLICT%20BLACK" target="_blank" class="btn btn-secondary">CONTACT WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+            <div class="related-products">
+                <h2>YOU MIGHT ALSO LIKE</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <a href="product.html">
+                            <div class="product-image">
+                                <img src="images/product2.jpg" alt="Related 1">
+                                <div class="product-overlay"><p>VIEW DETAILS</p></div>
+                            </div>
+                            <h3>HOODIE CONFLICT WHITE</h3>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="product.html">
+                            <div class="product-image">
+                                <img src="images/product3.jpg" alt="Related 2">
+                                <div class="product-overlay"><p>VIEW DETAILS</p></div>
+                            </div>
+                            <h3>CARGO PANTS BLACK</h3>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="product.html">
+                            <div class="product-image">
+                                <img src="images/product4.jpg" alt="Related 3">
+                                <div class="product-overlay"><p>VIEW DETAILS</p></div>
+                            </div>
+                            <h3>LONG SLEEVE GREY</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CONFLICT-X</h3>
+                    <p>Streetwear Brand from Indonesia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>CONNECT</h4>
+                    <a href="https://instagram.com/conflictx" target="_blank">Instagram</a>
+                    <a href="https://wa.me/628xxxxx" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+            <p class="copyright">© 2025 Conflict-X. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.querySelector('.main-image');
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                thumbnails.forEach(t => t.classList.remove('active'));
+                thumb.classList.add('active');
+                mainImage.src = thumb.src;
+            });
+        });
+    </script>
+</body>
+</html>
